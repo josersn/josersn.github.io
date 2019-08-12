@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, input, button{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+#container .menu{
+    font-size: 16pt;
+    background: #0053a0;
+    display: flex;
+    flex-direction: row;
+}
+#container .menu ul{
+    list-style: none;
+    display: flex;
+}
+
+
+#container .menu li{
+    padding: 7px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+#container .menu  li:hover{
+    color: #0052a0;
+    padding: 7px;
+    background: white;
+    border-radius: 12px;
+
+}
+#container .menu a:hover, li:hover{
+    color: #0052a0;
+
+}
+
+#container .menu a {
+    text-decoration: none;
+    color: white;
+}
+#container .logo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.nav{
+    width: 60%;
+    margin-top: 12px;
+}
+       main{
+           margin: 0;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-width: 100vh;
+           font-family: 'Poppiens', sans-serif;
+           background: #fff;
+       }
+       .poster{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 900px;
+        height: 600px;
+        background: #006dbc;
+        margin: 20px;
+        box-shadow: 4px 4px #cecece;
+       }
+       .poster .img{
+           position: relative;
+           display:flex;
+           justify-content: center;
+           align-content: center;
+           width: 50%;
+           height: 100%;
+           background: #fff;
+       }
+       .poster .img img{
+           position: relative;
+           width: 700px;
+        }
+        .poster .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 40px;
+        }
+        .poster .details h2{
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+            line-height: 0.8em;
+            color: #fff;
+        }
+        .poster .details span{
+            text-transform: uppercase;
+            font-size: 0.4em;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+        .poster .details p{
+            max-width: 85%;
+            margin-left: 15%;
+            color: #fff;
+            font-size: 18px;
+
+        }
+        .poster .details button{
+            background: #fff;
+            color: #006dbc;
+            border: none;
+            outline: none;
+            padding: 15px 20px ;
+            margin-top: 10px;
+            font-size:18px;  
+            letter-spacing: 1px;  
+            text-transform: uppercase;
+            font-weight: bold;
+            
+        }
+        .poster .details button:hover{
+            transform: translateY(-5px);
+        }
+        .skill{
+            height: 100vh;
+        }
+        .skill .title{
+            display: flex;
+            width: 100%;
+            height: 13%;
+            background: #0052a0;
+            margin-top: 5%;
+            justify-content: center;
+            align-items : center;
+        }
+        .skill .title h2{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .skill .block-skill{
+            width: 80%;
+            height: 80%;;
+        }
