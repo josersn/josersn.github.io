@@ -71,7 +71,7 @@ body, input, button{
         height: 600px;
         background: #006dbc;
         margin: 20px;
-        box-shadow: 4px 4px #cecece;
+        box-shadow: 4px 4px 4px 4px #cecece;
        }
        .poster .img{
            position: relative;
@@ -131,24 +131,54 @@ body, input, button{
         .poster .details button:hover{
             transform: translateY(-5px);
         }
-        .skill{
-            height: 100vh;
-        }
-        .skill .title{
-            display: flex;
-            width: 100%;
-            height: 13%;
+
+        .title{
+            height: 13vh;
             background: #0052a0;
-            margin-top: 5%;
+            display: flex; 
             justify-content: center;
-            align-items : center;
+            align-items: center;
+            margin-top: 10%;
         }
-        .skill .title h2{
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+        .title h2{
+         color: white;
+         text-transform: uppercase;
+         font-weight: bold;
+         letter-spacing: 3px;
         }
-        .skill .block-skill{
+        .block-cards{
+            height: 80vh;
+            display: flex;
             width: 80%;
-            height: 80%;;
+            margin: 25px auto;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
+        .block-cards .card{
+          margin-left: 1%;
+          max-width: 30%;
+          max-height: 18%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+        .block-cards .card p{
+            font-size: 14pt;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .block-cards .card:nth-child(2),.card:nth-child(5),.card:nth-child(8){
+            margin: 0 30px;
+        }
+        .block-cards{
+            max-width: auto;
+            justify-content: center;    
+        }
+        .block-cards .btn button{
+            color: white;
+            padding: 16px 36px;
+            background: #0052a0;
+            border: none;
+            font-size: 16pt;
+        }
+        
