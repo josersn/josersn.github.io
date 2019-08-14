@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body, input, button{
+body, input, button, textarea{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -138,7 +138,7 @@ body, input, button{
             display: flex; 
             justify-content: center;
             align-items: center;
-            margin-top: 10%;
+            margin-top: 3.8%;
         }
         .title h2{
          color: white;
@@ -180,5 +180,146 @@ body, input, button{
             background: #0052a0;
             border: none;
             font-size: 16pt;
+        }
+        
+
+
+
+
+        /*about */
+        .about-title{
+            height: 13vh;
+            background: #0052a0;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        .about-title h2{
+         color: white;
+         text-transform: uppercase;
+         font-weight: bold;
+         letter-spacing: 3px;
+        }
+        .painel-about{
+            width: 90%;
+            height: 85vh;
+            margin: 1vh auto;
+            display: flex;
+        }
+        .painel-about .imgs-me{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .painel-about .imgs-me .gold{
+            margin: auto;
+            width: 80%;
+        }
+        .painel-about .text-me{
+            width: 45%;
+        }
+        .painel-about .text-me .star-me{
+            width: 50px;
+            position: absolute
+        }
+        .painel-about .text-me h2{
+            color: #0052a0;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .painel-about .text-me p{
+            margin-top: 30px;
+            text-align: center;
+            color: #0052a0;
+            font-size: 18pt;
+            font-weight: bold;
+        }
+        .painel-about .text-me .me-social {
+            margin: 20px 110px;
+        }
+
+        /* contact*/
+
+        .title-contact{
+            height: 13vh;
+            width: 100%;
+            background: #0052a0;
+            display: flex;
+        }
+        .title-contact h2{
+           margin: auto ;
+           color: white;
+           text-transform: uppercase;
+           letter-spacing: 3px;
+        }
+        .painel-contact{
+            width: 90%;
+            height: 85vh;
+            display: flex;
+            margin: 1vh auto;
+        }
+        .painel-contact .img-contact {
+            width: 50%;
+            display: flex;
+        }
+        .painel-contact .img-contact img {
+            width: 70%;
+            height: 80%;
+            margin: auto;
+        }
+        .painel-contact .form-contact{
+            width: 50%;
+        }
+        .painel-contact .form-contact h2, h3{
+            color: #0052a0;
+        }
+        .painel-contact .form-contact h2{
+            margin-top: 8%;
+        }
+        .painel-contact .form-contact form{
+            display: flex;
+            flex-direction: column;
+        }
+        .painel-contact .form-contact .name, .email, .whats, .txt{
+            border: none;
+            border-bottom: 3px solid #cecece;
+            width: 70%;
+            height: 35px;;
+        
+        }
+        .painel-contact .form-contact .name{
+            margin: 6% 0;
+            
+        }
+        .painel-contact .form-contact .email, .whats{
+            margin-bottom: 8%;
+        }
+        
+        .painel-contact .form-contact .name::placeholder, .email::placeholder, .whats::placeholder, .txt::placeholder {
+            font-size: 15pt;
+            margin-left: 2px; 
+            font-weight: bold;
+        }
+        .painel-contact .form-contact .txt{
+            width: 70%;
+        }
+        .painel-contact .form-contact button{
+          width: 10%;
+          padding: 10px 40px;
+          display: flex;
+          margin: 38px auto;
+          border: none;
+          border-radius: 6px;
+          background: #0052a0;
+          color: white;
+          font-size: 14pt;
+          justify-content: center;  
+          font-weight: bold;
+        }
+        .painel-contact .form-contact button:hover{
+          background: #fff;
+          color: #0052a0;
+          border: 1px solid #0052a0;
         }
         
