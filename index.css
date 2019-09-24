@@ -1,325 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  transition: all 0.4s ease-in;
+  font-family: "Poppins", sans-serif;
 }
-body, input, button, textarea{
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+header {
+  height: 10vh;
 }
+#home .container .row {
+  height: 90vh;
+}
+#about .container-fluid .row,
+#contact .container-fluid .row {
+  height: 100vh;
+  background: #536dfe;
+}
+#habilidades .container-fluid {
+  height: 100vh;
+}
+#habilidades h2 {
+  color: #536dfe;
+  padding-top: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+}
+.profile {
+  width: 240px;
+}
+.img-me {
+  width: 70%;
+  margin: 0 auto;
+}
+.burguer {
+  display: none;
+}
+.j-link {
+  padding: 10px;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #fff;
+}
+#contact label {
+  margin: 0.5em 0;
+}
+#contact button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #fff;
+  color: #536dfe;
+  border: none;
+  font-weight: bold;
 
-#container .menu{
-    font-size: 16pt;
-    background: #0053a0;
+  transition: all 0.1 ease;
+}
+#contact button:hover {
+  transform: translateY(5px);
+}
+.j-link:hover {
+  background: #fff;
+  color: #536dfe;
+}
+#about img {
+  margin: 2rem auto 0 auto;
+}
+#habilidades h2 {
+  text-align: center;
+}
+@media (max-width: 574px) {
+  .burguer {
     display: flex;
-    flex-direction: row;
+  }
+  .menu {
+    display: none;
+  }
+  #habilidades .container-fluid {
+    height: 200vh;
+  }
 }
-#container .menu ul{
-    list-style: none;
-    display: flex;
-}
-
-
-#container .menu li{
-    padding: 7px;
-    margin: 0 20px;
-    font-weight: bold;
-}
-#container .menu  li:hover{
-    color: #0052a0;
-    padding: 7px;
-    background: white;
-    border-radius: 12px;
-
-}
-#container .menu a:hover, li:hover{
-    color: #0052a0;
-
-}
-
-#container .menu a {
-    text-decoration: none;
-    color: white;
-}
-#container .logo{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.nav{
-    width: 60%;
-    margin-top: 12px;
-}
-       main{
-           margin: 0;
-           padding: 0;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           min-width: 100vh;
-           font-family: 'Poppiens', sans-serif;
-           background: #fff;
-       }
-       .poster{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 900px;
-        height: 600px;
-        background: #006dbc;
-        margin: 20px;
-        box-shadow: 4px 4px 4px 4px #cecece;
-       }
-       .poster .img{
-           position: relative;
-           display:flex;
-           justify-content: center;
-           align-content: center;
-           width: 50%;
-           height: 100%;
-           background: #fff;
-       }
-       .poster .img img{
-           position: relative;
-           width: 700px;
-        }
-        .poster .details{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            height: 100%;
-            box-sizing: border-box;
-            padding: 40px;
-        }
-        .poster .details h2{
-            margin: 0;
-            padding: 0;
-            font-size: 2.5em;
-            line-height: 0.8em;
-            color: #fff;
-        }
-        .poster .details span{
-            text-transform: uppercase;
-            font-size: 0.4em;
-            letter-spacing: 2px;
-            color: #fff;
-        }
-        .poster .details p{
-            max-width: 85%;
-            margin-left: 15%;
-            color: #fff;
-            font-size: 18px;
-
-        }
-        .poster .details button{
-            background: #fff;
-            color: #006dbc;
-            border: none;
-            outline: none;
-            padding: 15px 20px ;
-            margin-top: 10px;
-            font-size:18px;  
-            letter-spacing: 1px;  
-            text-transform: uppercase;
-            font-weight: bold;
-            
-        }
-        .poster .details button:hover{
-            transform: translateY(-5px);
-        }
-
-        .title{
-            height: 13vh;
-            background: #0052a0;
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin-top: 3.8%;
-        }
-        .title h2{
-         color: white;
-         text-transform: uppercase;
-         font-weight: bold;
-         letter-spacing: 3px;
-        }
-        .block-cards{
-            height: 80vh;
-            display: flex;
-            width: 80%;
-            margin: 25px auto;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .block-cards .card{
-          margin-left: 1%;
-          max-width: 30%;
-          max-height: 18%;
-          display: flex;
-          align-items: center;
-          text-align: center;
-        }
-        .block-cards .card p{
-            font-size: 14pt;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-        }
-        .block-cards .card:nth-child(2),.card:nth-child(5),.card:nth-child(8){
-            margin: 0 30px;
-        }
-        .block-cards{
-            max-width: auto;
-            justify-content: center;    
-        }
-        .block-cards .btn button{
-            color: white;
-            padding: 16px 36px;
-            background: #0052a0;
-            border: none;
-            font-size: 16pt;
-        }
-        
-
-
-
-
-        /*about */
-        .about-title{
-            height: 13vh;
-            background: #0052a0;
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-        }
-        .about-title h2{
-         color: white;
-         text-transform: uppercase;
-         font-weight: bold;
-         letter-spacing: 3px;
-        }
-        .painel-about{
-            width: 90%;
-            height: 85vh;
-            margin: 1vh auto;
-            display: flex;
-        }
-        .painel-about .imgs-me{
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .painel-about .imgs-me .gold{
-            margin: auto;
-            width: 80%;
-        }
-        .painel-about .text-me{
-            width: 45%;
-        }
-        .painel-about .text-me .star-me{
-            width: 50px;
-            position: absolute
-        }
-        .painel-about .text-me h2{
-            color: #0052a0;
-            text-align: center;
-            margin-top: 25px;
-        }
-        .painel-about .text-me p{
-            margin-top: 30px;
-            text-align: center;
-            color: #0052a0;
-            font-size: 18pt;
-            font-weight: bold;
-        }
-        .painel-about .text-me .me-social {
-            margin: 20px 110px;
-        }
-
-        /* contact*/
-
-        .title-contact{
-            height: 13vh;
-            width: 100%;
-            background: #0052a0;
-            display: flex;
-        }
-        .title-contact h2{
-           margin: auto ;
-           color: white;
-           text-transform: uppercase;
-           letter-spacing: 3px;
-        }
-        .painel-contact{
-            width: 90%;
-            height: 85vh;
-            display: flex;
-            margin: 1vh auto;
-        }
-        .painel-contact .img-contact {
-            width: 50%;
-            display: flex;
-        }
-        .painel-contact .img-contact img {
-            width: 70%;
-            height: 80%;
-            margin: auto;
-        }
-        .painel-contact .form-contact{
-            width: 50%;
-        }
-        .painel-contact .form-contact h2, h3{
-            color: #0052a0;
-        }
-        .painel-contact .form-contact h2{
-            margin-top: 8%;
-        }
-        .painel-contact .form-contact form{
-            display: flex;
-            flex-direction: column;
-        }
-        .painel-contact .form-contact .name, .email, .whats, .txt{
-            border: none;
-            border-bottom: 3px solid #cecece;
-            width: 70%;
-            height: 35px;;
-        
-        }
-        .painel-contact .form-contact .name{
-            margin: 6% 0;
-            
-        }
-        .painel-contact .form-contact .email, .whats{
-            margin-bottom: 8%;
-        }
-        
-        .painel-contact .form-contact .name::placeholder, .email::placeholder, .whats::placeholder, .txt::placeholder {
-            font-size: 15pt;
-            margin-left: 2px; 
-            font-weight: bold;
-        }
-        .painel-contact .form-contact .txt{
-            width: 70%;
-        }
-        .painel-contact .form-contact button{
-          width: 10%;
-          padding: 10px 40px;
-          display: flex;
-          margin: 38px auto;
-          border: none;
-          border-radius: 6px;
-          background: #0052a0;
-          color: white;
-          font-size: 14pt;
-          justify-content: center;  
-          font-weight: bold;
-        }
-        .painel-contact .form-contact button:hover{
-          background: #fff;
-          color: #0052a0;
-          border: 1px solid #0052a0;
-        }
-        
