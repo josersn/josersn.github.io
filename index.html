@@ -44,6 +44,8 @@
           </nav>
           <svg
             class="burguer"
+            id="change"
+            onclick="toggleClass()"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
@@ -90,7 +92,7 @@
               <h1>José Ramos</h1>
               <h2 class="text-black-50">Web Developer Front End</h2>
               <p>
-                Desenvolvendo tecnologia e soluções web , para todos os mercado
+                Desenvolvendo tecnologia e soluções web, para todos os mercado
                 e área de negócios, com as tecnologias mais inovadoras de
                 mercado, para obter os melhores resultados visuais e
                 performance.
@@ -171,13 +173,30 @@
           </div>
 
           <div class="row d-flex  justify-content-around mt-5">
+
+              <div class="col-md-3 col-lg-3 ">
+                  <img src="images/react.svg" alt=""  />
+                  <div class="progress ">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 40%"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+
+
             <div class="col-md-3 col-lg-3 bg- justify-content-around">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
+                class="git"
                 y="0px"
-                width="128"
-                height="128"
+                width="140"
+                height="140"
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"
               >
@@ -209,26 +228,14 @@
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="75"
+                  style="width: 20%"
+                  aria-valuenow="20"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
               </div>
             </div>
-            <div class="col-md-3 col-lg-3 ">
-              <img src="images/react.svg" alt="" />
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 40%"
-                  aria-valuenow="40"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
+          
             <div class="col-md-3 col-lg-3 ">
               <img src="images/php.svg" alt="" />
               <div class="progress">

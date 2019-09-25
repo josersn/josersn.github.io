@@ -77,4 +77,15 @@ header {
   #habilidades .container-fluid {
     height: 200vh;
   }
+  #home .container .row {
+    height: 100vh;
+  }
+  #about .container .row  p,h2{
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1000px){
+  .git{
+    margin-bottom: 30px;
+  }
 }
