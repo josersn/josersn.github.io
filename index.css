@@ -1,0 +1,80 @@
+* {
+  transition: all 0.4s ease-in;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  height: 10vh;
+}
+#home .container .row {
+  height: 90vh;
+}
+#about .container-fluid .row,
+#contact .container-fluid .row {
+  height: 100vh;
+  background: #536dfe;
+}
+#habilidades .container-fluid {
+  height: 100vh;
+}
+#habilidades h2 {
+  color: #536dfe;
+  padding-top: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+}
+.profile {
+  width: 180px;
+}
+.img-me {
+  width: 70%;
+  margin: 0 auto;
+}
+.burguer {
+  display: none;
+}
+.j-link {
+  padding: 10px;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #fff;
+}
+#contact label {
+  margin: 0.5em 0;
+}
+#contact button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #fff;
+  color: #536dfe;
+  border: none;
+  font-weight: bold;
+
+  transition: all 0.1 ease;
+}
+#contact button:hover {
+  transform: translateY(5px);
+}
+.j-link:hover {
+  background: #fff;
+  color: #536dfe;
+}
+#about img {
+  margin: 2rem auto 0 auto;
+}
+#habilidades h2 {
+  text-align: center;
+}
+@media (max-width: 574px) {
+  .burguer {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  #habilidades .container-fluid {
+    height: 200vh;
+  }
+}
