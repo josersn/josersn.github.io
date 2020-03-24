@@ -13,10 +13,10 @@ header {
   height: 100vh;
   background: #536dfe;
 }
-#habilidades .container-fluid {
+#habilidades .container-fluid, #jobs .container-fluid {
   height: 100vh;
 }
-#habilidades h2 {
+#habilidades h2, #jobs h2{
   color: #536dfe;
   padding-top: 1.2rem;
   text-transform: uppercase;
@@ -88,4 +88,14 @@ header {
   .git{
     margin-bottom: 30px;
   }
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #536dfe;
+}
+::-webkit-scrollbar-track{
+background-color: #dddddd;
 }
